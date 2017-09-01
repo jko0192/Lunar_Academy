@@ -1,0 +1,577 @@
+/*
+    ================================
+            Eric Meyer's Reset
+    ================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    ===================================
+				  Body
+    ===================================
+*/
+
+body {
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+	====================================
+		   Border-Box & Clear-Fix
+	====================================
+*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*
+	======================================
+				Media Query
+	======================================
+*/
+
+@media(min-width: 400px) {
+
+	.lunar-container {
+		width: 100%;
+		margin: 0 auto;
+		background-color: black;
+		padding: 15px;
+	}
+	
+	.main-body-container {
+		width: 100%;
+	}
+
+	.all-campus-container {
+		width: 80%;
+		margin: 0 auto;
+		
+	}
+
+	.lunar-student-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.campus-style img {
+		max-width: 80%;
+		border-radius: 50%;
+		display: block;
+		margin-left: 20px;
+		border: 7px solid azure;
+	}
+
+
+	.student-campus-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+}
+
+/*
+	=======================================
+		  		Navigation Bar
+	=======================================
+*/
+
+.main-title {
+	font-size: 23px;
+	font-weight: 400;
+	color: azure;
+	margin-left: 15px;
+	padding: 3px 0;
+	vertical-align: middle;
+}
+
+.lunar-navigation, 
+.lunar-container h1,
+.lunar-navigation li {
+	display: inline-block;
+}
+
+.lunar-navigation {
+	float: right;
+	margin-right: 30px;
+}
+
+.lunar-navigation li {
+	padding: 10px 25px 10px 0;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.lunar-nav-style {
+	text-decoration: none;
+	color: azure;
+}
+
+.lunar-container h1:hover {
+	color: yellow;
+}
+.lunar-nav-style:hover {
+	color: yellow;
+}
+
+.lunar-container img {
+	width: 2%;
+	margin-left: 20px;	
+	vertical-align: middle;
+	margin-bottom: 2px;
+	transition: all .5s
+}
+
+.lunar-container img:hover {
+	transform: scale(1.2) rotate(360deg);
+}
+
+/*
+	===================================
+		  Home Page: Body Section
+	===================================
+*/
+
+.main-body-style img {
+	max-width: 100%;
+	background-image: url('')
+}
+
+
+
+/*
+	====================================
+		All Campus Page: Body Section
+	====================================
+*/
+
+.all-campus-body {
+	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+}
+
+.campus-col-half {
+	width: 40%;
+}
+
+.all-campus-container h1 {
+	text-align: center;
+	font-size: 35px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-weight: 600;
+	color: black;
+}
+
+.campus-style {
+	margin: 40px;
+	display: inline-block;
+}
+
+.campus-style p {
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.campus-delete {
+	margin: 20px 0 10px 0;
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: rgb(66, 188, 243);
+	font-weight: 600;
+	padding: 10px;
+
+}
+
+.campus-link {
+	text-decoration: none;
+	color: black;
+}
+
+.campus-link:hover {
+	color: lightgreen;
+}
+
+.all-campus-box {
+	text-align: center;
+}
+
+.campus-box {
+	border: 5px solid rgb(186, 186, 186);
+	background: azure;
+	display: inline-block;
+	margin-top: 25px;
+	border-radius: 10px;
+	padding: 20px;
+	margin-left: -50px;
+}
+
+.new-campus h2,
+.new-campus form {
+	display: inline-block;
+}
+
+.new-campus h2 {
+	font-size: 27px;
+	font-weight: 600;
+	padding: 25px;
+}
+
+.new-campus {
+	background: azure;
+	border: 3px solid gray;
+	text-align: center;
+}
+
+.new-campus input {
+	font-size: 27px;
+}
+
+.new-campus button {
+	margin-left: 20px;
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 8px;
+	color: azure;
+	font-weight: 400;
+	background: #32E566;
+}
+
+
+/*
+	========================================
+					Students
+	========================================
+*/
+
+.lunar-student-box-model {
+	display: inline-block;
+	text-align: right;
+}
+
+.lunar-student-box-model img {
+	max-width: 45%;
+	display: block;
+	margin: 0 auto;
+	border: 7px solid #EFE5E5;
+	border-radius: 50%;
+	margin-right: -3px;
+	transition: all .5s
+}
+
+.lunar-student-box-model img:hover {
+	transform: scale(1.2);
+}
+
+
+.all-student-box h1 {
+	font-size: 30px;
+	text-align: center;
+	padding: 30px;
+	font-weight: 600;
+}
+
+.student-model {
+	border: 5px solid #C1BDBD;
+	display: inline-block;
+	padding: 5px;
+	margin: 20px;
+	text-align: center;
+	margin-right: -10px;
+	margin-bottom: 100px;
+}
+
+.student-model button {
+	margin: 10px;
+	font-size: 25px;
+	border-radius: 10px;
+	background-color: #72C2F9;
+	color: azure;
+}
+
+.student-model p {
+	font-size: 25px;
+	padding: 10px;
+	font-weight: 400;
+}
+
+.lunar-student-link {
+	text-decoration: none;
+	color: black;
+}
+
+.lunar-student-link:hover {
+	color: #44E344;
+}
+
+.new-student h3{
+	padding: 25px;
+	font-size: 28px;
+	font-weight: 600;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.new-student {
+	border: 6px solid rgba(11, 162, 227, 0.91);
+	background-color: #C8BFBF;
+	color: azure;
+}
+
+.new-student h4 {
+	padding: 10px;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.new-student form {
+	padding: 25px;
+	display: inline-block;
+}
+
+.new-student input {
+	font-size: 20px;
+}
+
+.new-student select {
+	width: 30%;
+	font-size: 20px;
+}
+
+.new-student button {
+	font-size: 25px;
+	border-radius: 10px;
+	background-color: #36E341;
+	color: azure;
+}
+
+.form-container {
+	width: 60%;
+}
+
+/*
+	========================================
+				Single Student
+	========================================
+*/
+
+
+.lunar-single-student-style h1 {
+	font-size: 30px;
+	text-align: center;
+	padding: 25px;
+	font-weight: 600;
+}
+
+.lunar-single-student-style h2 {
+	font-size: 23px;
+	padding: 15px;
+	font-weight: 400;
+}
+
+.lunar-single-student-style form h4 {
+	display: inline-block;
+}
+
+.single-student-form {
+	border: 6px solid black;
+}
+
+.edit-student {
+	border: 6px solid #B2AAAA;
+	background-color: azure;
+	margin: 20px 0;
+}
+
+.edit-student h3 {
+	padding: 28px;
+	font-size: 25px;
+	font-weight: 400;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.edit-student form {
+	padding: 20px;
+	display: inline-block;
+}
+
+.lunar-single-student-form h4 {
+	font-size: 20px;
+	padding: 15px;
+	font-weight: 600;
+}
+
+.lunar-single-student-form input {
+	font-size: 20px;
+}
+
+.lunar-single-student-form select {
+	width: 30%;
+	font-size: 20px;
+}
+
+.lunar-single-student-form button {
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: #47EE47;
+	color: azure;
+}
+
+
+/*
+	========================================
+		List of Students in Each Campus
+	========================================
+
+*/
+
+
+.student-campus h1{
+	font-size: 30px;
+	text-align: center;
+	font-weight: 600;
+	padding: 28px;
+}
+
+.each-student-link {
+	text-decoration: none;
+	color: black;
+}
+
+.each-student-link:hover {
+	text-decoration: none;
+	color: yellow;
+}
+
+.each-student p {
+	font-size: 25px;
+	padding: 15px;
+	font-weight: 400;
+}
+
+.planet-student {
+	margin-top: 10px;
+	border: 5px solid #BABABA;
+	background: azure;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.planet-student h3 {
+	font-size: 28px;
+	padding: 20px;
+	font-weight: 400;
+}
+
+.each-student-form,
+.each-student-form h4,
+.each-student-form input {
+	display: inline-block;
+}
+
+.each-student-form h4 {
+	font-size: 25px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	font-weight: 400;
+}
+
+.each-student-form input {
+	font-size: 25px;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+.each-student-form button {
+	font-size: 25px;
+	border-radius: 10px;
+	background-color: #31CD31;
+	color: azure;
+}
+
+/*
+	========================================
+					Footer
+	========================================
+*/
+
+.footer-navigation, 
+.lunar-footer h3,
+.lunar-footer li {
+	display: inline-block;
+}
+
+.footer-title {
+	font-size: 18px;
+	margin-left: 30px;
+	font-weight: 400;
+}
+
+.footer-navigation {
+	float: right;
+	margin-right: 35px;
+}
+
+.footer-navigation li {
+	padding-right: 15px;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.wrap {
+	min-height: calc(100vh - 53px);
+}
