@@ -190,7 +190,20 @@ body {
 	background-image: url('')
 }
 
+.bigDiv {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("http://www.powerpointhintergrund.com/uploads/2017/06/pics-photos-night-sky-hd-wallpaper-150x150-night-sky-hd-wallpaper-6.jpeg");
+	background-size: 100%;
+}
 
+#lunar-academy-title {
+	color: azure;
+	font-size: 40px;
+	text-align: center;
+	padding: 200px;
+	font-weight: 600;
+}
 
 /*
 	====================================
