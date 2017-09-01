@@ -45,7 +45,7 @@ export default class StudentsOfCampus extends Component {
             <div className ="student-campus-body">
             <div className = "student-campus-container">
                 <div className = "student-campus">
-                <h1>List of Students for { this.state.campus[0] && this.state.campus[0].name }</h1>
+                <h1>List of Students for {this.state.campus[0] && this.state.campus[0].name }</h1>
                 <div className ="each-student">
                     {
                         this.state.campus[0] && this.state.campus[0].users.filter(student => {

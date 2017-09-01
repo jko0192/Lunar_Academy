@@ -58,7 +58,7 @@ export default class SingleStudent extends Component {
             name: this.state.name ? this.state.name : this.state.student[0].name,
             email: this.state.email ? this.state.email : this.state.student[0].email,
             age: this.state.age ? this.state.age: parseInt(this.state.student[0].age),
-            campusId: this.state.campusId
+            campusId: this.state.campusId == "N/A" ? null : this.state.campusId
         })
         .then(res => res.data)
         .then(updatedStudent => this.setState({student: updatedStudent}));
