@@ -13,6 +13,7 @@ export default class AllStudents extends Component {
             name: '',
             email: '',
             age: '',
+            image: {},
             campusId: 0,
         }
         
@@ -33,7 +34,7 @@ export default class AllStudents extends Component {
         .then(academyArray => {
             let students = academyArray[0];
             let campuses = academyArray[1];
-            this.setState({students: students, campuses: campuses, campusId: campuses[0] && campuses[0].id || 0});
+            this.setState({students: students, campuses: campuses, campusId: campuses[0] && campuses[0].id || 0,})
         })
     }
 
@@ -59,12 +60,12 @@ export default class AllStudents extends Component {
             name: this.state.name ? this.state.name : alert("Please enter a name"),
             email: this.state.email ? this.state.email : alert("Please enter an e-mail"),
             age: parseInt(this.state.age) ? parseInt(this.state.age) : alert("Please enter an age"),
+            image: avatar.generate_avatar(),
             campusId: this.state.campusId ? this.state.campusId : alert("Please create a campus")
         })
         .then(res => res.data)
         .then(newStudent => this.setState({students: this.state.students.concat(newStudent)})
         )
-
         this.setState({name: '', email: '', age: ''});
     }
 
@@ -77,7 +78,7 @@ export default class AllStudents extends Component {
     }
 
     render() {
-        console.log(this.state.avatars)
+        console.log(this.state.students)
         return (
             <div className ="lunar-student-body">
                 <div className ="lunar-student-container">
@@ -87,7 +88,7 @@ export default class AllStudents extends Component {
                         this.state.students && this.state.students.map(student => {
                             return(
                                 <div className = "lunar-student-box-model campus-col-half">
-                                    <img src={avatar.generate_avatar()} />
+                                    <img id = "cartoon-avatar" src = {student.image}/>
                                     <form className = "student-model" onSubmit = {this.deleteStudent}>
                                         <p>Name: <NavLink className = "lunar-student-link" to = {`/students/${student.id}`} >{student.name}</NavLink></p>
                                         <p>Campus: <NavLink className = "lunar-student-link" to = {`/campuses/${student.campusId}`} >{student.campus && student.campus.name || "N/A"}</NavLink></p>

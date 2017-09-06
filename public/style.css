@@ -120,7 +120,23 @@ body {
 		width: 80%;
 		margin: 0 auto;
 	}
-
+	
+	@keyframes rotate {
+		from {
+		  -webkit-transform: rotate(0deg);
+		}
+		to { 
+		  -webkit-transform: rotate(360deg);
+		}
+	  }
+	  
+	  .campus-style img
+	  {
+		  -webkit-animation-name:             rotate; 
+		  -webkit-animation-duration:         2s; 
+		  -webkit-animation-iteration-count:  infinite;
+		  -webkit-animation-timing-function: linear;
+	  }
 }
 
 /*
@@ -187,7 +203,6 @@ body {
 
 .main-body-style img {
 	max-width: 100%;
-	background-image: url('')
 }
 
 .bigDiv {
@@ -204,6 +219,7 @@ body {
 	padding: 200px;
 	font-weight: 600;
 }
+
 
 /*
 	====================================
