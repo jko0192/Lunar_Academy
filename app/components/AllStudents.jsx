@@ -105,12 +105,22 @@ export default class AllStudents extends Component {
                 <div className = "new-student">
                         <h3>Create a New Student</h3>
                         <form className = "form-container" onSubmit = {this.handleSubmit}>
-                            <h4>Name: </h4>
-                            <input value = {this.state.name} onChange = {this.nameChange} type = 'text' name = "name" /> 
-                            <h4>Email: </h4>
-                            <input value = {this.state.email} onChange = {this.emailChange} type = 'text' name = "email" /> <br />
-                            <h4>Age: </h4>
-                            <input value = {this.state.age} onChange = {this.ageChange} type = 'text' name = "age" /> 
+                            
+                    
+                                <h4>Name:</h4>
+                                <input value = {this.state.name} onChange = {this.nameChange} type = 'text' name = "name" /> 
+                      
+
+         
+                                <h4>Email:</h4>
+                                <input value = {this.state.email} onChange = {this.emailChange} type = 'text' name = "email" /> <br />
+                         
+
+            
+                                <h4>Age:</h4>
+                                <input value = {this.state.age} onChange = {this.ageChange} type = 'text' name = "age" /> 
+   
+
                             <h4>Campus: </h4>
                             <select onChange = {this.campusChange}>
                                 {

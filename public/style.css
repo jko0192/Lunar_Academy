@@ -201,6 +201,11 @@ body {
 	===================================
 */
 
+.main-body-style {
+	text-align: center;
+	padding-top: 160px;
+}
+
 .main-body-style img {
 	max-width: 100%;
 }
@@ -208,7 +213,7 @@ body {
 .bigDiv {
 	height: 100vh;
 	width: 100vw;
-	background-image: url("https://static.pexels.com/photos/33688/delicate-arch-night-stars-landscape.jpg");
+	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/cc/ea/03/ccea03621fd79299bba6ca82b5e7693b.jpg");
 	background-size: 100%;
 }
 
@@ -216,8 +221,29 @@ body {
 	color: azure;
 	font-size: 40px;
 	text-align: center;
-	padding: 200px;
 	font-weight: 600;
+	text-shadow: 4px 4px black;
+}
+
+.main-body-style button {
+	font-size: 30px;
+	border-radius: 7px;
+	background-color: lightgreen; 
+	padding: 10px;
+	border: 5px solid azure;
+	margin-top: 40px;
+	font-weight: 600;
+	text-shadow: 1px 1px black;
+}
+
+.go-to-campus-link {
+	text-decoration: none;
+	color: azure;
+}
+
+.go-to-campus-link:hover {
+	text-decoration: none;
+	color: grey;
 }
 
 
@@ -258,9 +284,11 @@ body {
 	margin: 20px 0 10px 0;
 	font-size: 20px;
 	border-radius: 10px;
-	background-color: rgb(66, 188, 243);
+	background-color: skyblue;
 	font-weight: 600;
 	padding: 10px;
+	color: azure;
+	border-radius: 5px solid lightgrey;
 
 }
 
@@ -314,8 +342,9 @@ body {
 	border-radius: 10px;
 	padding: 8px;
 	color: azure;
-	font-weight: 400;
-	background: #32E566;
+	font-weight: 600;
+	padding: 8px;
+	background: lightgreen;
 }
 
 
@@ -348,12 +377,15 @@ body {
 .all-student-box h1 {
 	font-size: 30px;
 	text-align: center;
-	padding: 30px;
+	padding: 35px;
 	font-weight: 600;
+	letter-spacing: .2em;
 }
 
 .student-model {
-	border: 5px solid #C1BDBD;
+	border: 7px solid lightgrey;
+	background-color: skyblue;
+	color: azure;
 	display: inline-block;
 	padding: 5px;
 	margin: 20px;
@@ -365,20 +397,22 @@ body {
 .student-model button {
 	margin: 10px;
 	font-size: 25px;
+	font-weight: 600;
+	padding: 8px;
 	border-radius: 10px;
-	background-color: #72C2F9;
+	background-color: lightgreen;
 	color: azure;
 }
 
 .student-model p {
 	font-size: 25px;
 	padding: 10px;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 .lunar-student-link {
 	text-decoration: none;
-	color: black;
+	color: azure;
 }
 
 .lunar-student-link:hover {
@@ -394,25 +428,31 @@ body {
 }
 
 .new-student {
-	border: 6px solid rgba(11, 162, 227, 0.91);
-	background-color: #C8BFBF;
+	border: 6px solid darkgrey;
+	background-color: black;
 	color: azure;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .new-student h4 {
-	padding: 10px;
+	padding: 15px;
 	display: inline-block;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 600;
 }
 
 .new-student form {
 	padding: 25px;
 	display: inline-block;
+	flex: 1 50%;
 }
 
 .new-student input {
 	font-size: 20px;
+	margin-right: 20px;
 }
 
 .new-student select {
@@ -422,13 +462,20 @@ body {
 
 .new-student button {
 	font-size: 25px;
+	font-weight: 500;
+	padding: 5px;
 	border-radius: 10px;
-	background-color: #36E341;
+	background-color: lightgreen;
 	color: azure;
+	margin-top: 10px;
 }
 
 .form-container {
 	width: 60%;
+}
+
+.move {
+	flex: 1;
 }
 
 /*

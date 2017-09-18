@@ -28938,13 +28938,13 @@
 	                            _react2.default.createElement(
 	                                'h4',
 	                                null,
-	                                'Name: '
+	                                'Name:'
 	                            ),
 	                            _react2.default.createElement('input', { value: this.state.name, onChange: this.nameChange, type: 'text', name: 'name' }),
 	                            _react2.default.createElement(
 	                                'h4',
 	                                null,
-	                                'Email: '
+	                                'Email:'
 	                            ),
 	                            _react2.default.createElement('input', { value: this.state.email, onChange: this.emailChange, type: 'text', name: 'email' }),
 	                            ' ',
@@ -28952,7 +28952,7 @@
 	                            _react2.default.createElement(
 	                                'h4',
 	                                null,
-	                                'Age: '
+	                                'Age:'
 	                            ),
 	                            _react2.default.createElement('input', { value: this.state.age, onChange: this.ageChange, type: 'text', name: 'age' }),
 	                            _react2.default.createElement(
@@ -31203,6 +31203,15 @@
 	                            'h1',
 	                            { id: 'lunar-academy-title' },
 	                            'Welcome to Lunar Academy'
+	                        ),
+	                        _react2.default.createElement(
+	                            'button',
+	                            null,
+	                            _react2.default.createElement(
+	                                _reactRouterDom.NavLink,
+	                                { to: '/campuses', className: 'go-to-campus-link' },
+	                                'Campuses'
+	                            )
 	                        )
 	                    )
 	                )
