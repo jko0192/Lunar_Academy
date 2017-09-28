@@ -83,7 +83,6 @@ body {
 	======================================
 */
 
-@media(min-width: 400px) {
 
 	.lunar-container {
 		width: 100%;
@@ -137,7 +136,6 @@ body {
 		  -webkit-animation-iteration-count:  infinite;
 		  -webkit-animation-timing-function: linear;
 	  }
-}
 
 /*
 	=======================================
@@ -478,6 +476,11 @@ body {
 	flex: 1;
 }
 
+.avatar-half {
+	width: 40%;
+}
+
+
 /*
 	========================================
 				Single Student
@@ -650,4 +653,79 @@ body {
 
 .wrap {
 	min-height: calc(100vh - 53px);
+}
+
+
+/*
+	================================
+			Responsive Design
+	================================
+*/
+
+@media(min-width: 300px) and (max-width: 800px) {
+	.campus-box {
+		width: 100%;
+		margin-left: 6px;
+	}
+
+	.campus-box button {
+		width: 100%;
+		font-size: 14px;
+	}
+
+}
+
+@media(min-width:300px) and (max-width: 470px) {
+	.avatar-half {
+		width: 100%;
+	}
+
+	.lunar-student-box-model img {
+		margin: 0 auto;
+	}
+	.student-model {
+		margin-right: 50px;
+	}
+}
+
+@media(min-width: 480px) and (max-width: 600px) {
+	.avatar-half {
+		width: 100%;
+	}
+	.lunar-student-box-model img {
+		margin: 0 auto;
+	}
+	.student-model {
+		margin-right: 100px;
+	}
+}
+
+@media(min-width: 740px) and (max-width: 899px) {
+	.avatar-half {
+		width: 100%;
+	}
+	.lunar-student-box-model img {
+		margin: 0 auto;
+	}
+	.student-model {
+		margin-right: 170px;
+	}
+}
+
+@media(min-width: 900px) and (max-width: 1000px) {
+	.avatar-half {
+		width: 100%;
+	}
+	.lunar-student-box-model img {
+		margin: 0 auto;
+	}
+	.student-model {
+		margin-right: 240px;
+	}
+}
+
+@media(min-width: 300px) and (max-width: 1000px) {
+	.lunar-container img {
+		width: 30px;
+	}
 }

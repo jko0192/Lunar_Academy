@@ -87,7 +87,7 @@ export default class AllStudents extends Component {
                         {
                         this.state.students && this.state.students.map(student => {
                             return(
-                                <div className = "lunar-student-box-model campus-col-half">
+                                <div className = "lunar-student-box-model avatar-half">
                                     <img id = "cartoon-avatar" src = {student.image}/>
                                     <form className = "student-model" onSubmit = {this.deleteStudent}>
                                         <p>Name: <NavLink className = "lunar-student-link" to = {`/students/${student.id}`} >{student.name}</NavLink></p>

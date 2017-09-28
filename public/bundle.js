@@ -28886,7 +28886,7 @@
 	                        this.state.students && this.state.students.map(function (student) {
 	                            return _react2.default.createElement(
 	                                'div',
-	                                { className: 'lunar-student-box-model campus-col-half' },
+	                                { className: 'lunar-student-box-model avatar-half' },
 	                                _react2.default.createElement('img', { id: 'cartoon-avatar', src: student.image }),
 	                                _react2.default.createElement(
 	                                    'form',
