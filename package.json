@@ -27,7 +27,7 @@
     "redux": "^3.6.0",
     "redux-logger": "^2.7.0",
     "redux-thunk": "^2.1.0",
-    "sequelize": "^4.7.4"
+    "sequelize": "^5.15.1"
   },
   "devDependencies": {
     "axios": "^0.16.2",
